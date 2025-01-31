@@ -41,6 +41,22 @@
 
         }
 
+        @keyframes slide {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+            
+        }
+
+       
+    
+        .animate-slide {
+                animation: slide  12s infinite linear;
+              }
+
     }
 
       </style>
@@ -117,12 +133,12 @@
             <h1 class=" text-4xl  md:text-6xl  mb-4 adlam-display-regular">Pamper Your Pet, <br>
                  Because They Deserve <br> the Bes</h1>
             <p class="mb-4 text-[2opx] sora-display-regular">Discover a world of treats, toys, and essentials handpicked  for  your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="btn px-7 py-2 bg-yellow-400 sm:text-[15px] md:text-[20px]">Find a pet</button>
+            <button class="btn px-7 py-2 bg-yellow-400 sm:text-[15px] md:text-[20px] animate-bounce">Find a pet</button>
 
         </div>
 
         <div class="absolute  left-10 lg:left-28  inset-y-2/3  md:inset-y-2/4 lg:inset-y-1 lg:-top-1/3 z-0 " >
-            <img  class="z-0 object-contain" src="./images/cat-big.png" alt="">
+            <img  class="z-0 object-contain " src="./images/cat-big.png" alt="">
         </div>
     </section>
 
@@ -171,6 +187,47 @@
             </div>
           </div>
         </section>
+
+        <!-- extra section -->
+
+        <section class=" container mx-auto px-4 mt-20 ">
+            <h1 class="text-3xl md:text-4xl adlam-display-regular ">Top Sell</h1>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 ">
+
+                    <div class="border-2 text-center p-6 bg-[#FFF9F4] rounded-xl">
+                        <img class="mx-auto rounded-t-lg" src="./images/1.jpg" alt="">
+                        <h1 class="text-xl adlam-display-regular mt-2">Name:Charlie</h1>
+                        <h1 class="">Price:$100</h1>
+                    </div>
+                    <div class="border-2 text-center p-6 bg-[#FFF9F4] rounded-xl">
+                        <img class="mx-auto rounded-t-lg" src="./images/2.jpg" alt="">
+                        <h1 class="text-xl adlam-display-regular mt-2">Name:Max</h1>
+                        <h1 class="">Price:$120</h1>
+                    </div>
+                    <div class="border-2 text-center p-6 bg-[#FFF9F4] rounded-xl">
+                        <img class="mx-auto rounded-t-lg" src="./images/3.jpg" alt="">
+                        <h1 class="text-xl adlam-display-regular mt-2">Name:Cooper</h1>
+                        <h1 class="">Price:$150</h1>
+                    </div>
+                    <div class="border-2 text-center p-6 bg-[#FFF9F4] rounded-xl">
+                        <img class="mx-auto rounded-t-lg" src="./images/4.jpg" alt="">
+                        <h1 class="text-xl adlam-display-regular mt-2">Name:Teddy</h1>
+                        <h1 class="">Price:$200</h1>
+                    </div>
+                   
+    
+                </div>
+            </div>
+
+            
+            
+            
+            
+
+        </section>
+         
 
         <!-- section Trending Pet Products -->
 
@@ -290,7 +347,8 @@
     
         </section>
 
-
+          
+        
         <!--Everyday low Price section  -->
 
         <section class="container mx-auto mt-20 px-4 mb-96 ">
@@ -333,16 +391,9 @@
         </section>
 
         <br>
-        <!-- extra section -->
-
-        <section>
-
-        </section>
-
-
-        <!-- Get Pawsome News! -->
-
         
+
+        <!-- Get Pawsome News! -->       
       
     </main>
 
